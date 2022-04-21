@@ -1,0 +1,28 @@
+﻿<Window x:Class="crez_2i1_07._04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:crez_2i1_07._04"
+        mc:Ignorable="d"
+        Title="Магазин солнышко" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="button" Content="Определить цену" HorizontalAlignment="Left" Margin="10,201,0,0" VerticalAlignment="Top" Width="106" Click="button_Click"/>
+        <Label x:Name="label" Content="Название товара:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Цена:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="Image1_png" Margin="497,0,0,170" Source="Image1.png" Stretch="Fill"/>
+        <CheckBox x:Name="checkBox" Content="С доставкой" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Checked="checkBox_Checked"/>
+        <CheckBox x:Name="checkBox1" Content="Самовывоз" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.451,1.147" Checked="checkBox1_Checked"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="116,14,0,0" VerticalAlignment="Top" Width="126" SelectionChanged="comboBox_SelectionChanged">
+            <ComboBoxItem>Компьютер</ComboBoxItem>
+            <ComboBoxItem>Телевизор</ComboBoxItem>
+        </ComboBox>
+        <Image x:Name="Image2_png" Margin="261,0,295,170"  Stretch="Fill"/>
+        <Label x:Name="cena" Content="" HorizontalAlignment="Left" Margin="116,44,0,0" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="24" Margin="116,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="label1" Content="Введите сумму:" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="label3" Content="Ваша сдача:" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="" HorizontalAlignment="Left" Margin="116,125,0,0" VerticalAlignment="Top" Width="128"/>
+
+    </Grid>
+</Window>
